@@ -2183,6 +2183,7 @@
             setupAutoSave();
             checkVersion();
             loadSavedFriends();
+            loadGroups();
 
             setTimeout(() => {
                 const validation = validateUserCredentials();
@@ -4153,11 +4154,6 @@
 
             resultsContainer.innerHTML = html;
         }
-
-        // Initialize groups on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            loadGroups();
-        });
 
     </script>
 </body>
